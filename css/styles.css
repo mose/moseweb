@@ -1,72 +1,4 @@
-@font-face {
-  font-family: 'OpenSansLight';
-  src: url("../fonts/OpenSans-Light-webfont.eot");
-  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSansLightItalic';
-  src: url("../fonts/OpenSans-LightItalic-webfont.eot");
-  src: url("../fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-LightItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSansRegular';
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'OpenSansItalic';
-  src: url("../fonts/OpenSans-Italic-webfont.eot");
-  src: url("../fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'OpenSansSemibold';
-  src: url("../fonts/OpenSans-Semibold-webfont.eot");
-  src: url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'OpenSansSemiboldItalic';
-  src: url("../fonts/OpenSans-SemiboldItalic-webfont.eot");
-  src: url("../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiboldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-SemiboldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'OpenSansBold';
-  src: url("../fonts/OpenSans-Bold-webfont.eot");
-  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-  font-family: 'OpenSansBoldItalic';
-  src: url("../fonts/OpenSans-BoldItalic-webfont.eot");
-  src: url("../fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-}
+@import url(http://fonts.googleapis.com/css?family=Chango|Rokkitt:400,700|Source+Code+Pro);
 
 /* normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
@@ -149,6 +81,7 @@ textarea {
  */
 body {
   margin: 0;
+  padding: 0;
 }
 
 /* =============================================================================
@@ -257,8 +190,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  font-family: 'Source Code Pro', monospace, sans-serif;
+  _font-family: 'Source Code Pro', monospace;
   font-size: 1em;
 }
 
@@ -390,7 +323,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -529,9 +462,9 @@ table {
 }
 
 body {
-  padding: 0px 0 20px 0px;
+  padding: 0px;
   margin: 0px;
-  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 14px/1.5, 'Rokkitt', sans-serif;
   color: #f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -547,7 +480,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #e8e8e8;
   margin: 0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Chango', sans-serif;
   font-weight: normal;
 }
 
@@ -574,7 +507,7 @@ h4, h5, h6 {
 h3 {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Chango', sans-serif;
   font-weight: normal;
   color: #b6b6b6;
 }
@@ -600,8 +533,7 @@ ul {
 }
 
 strong {
-  font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -623,7 +555,7 @@ blockquote {
 }
 
 code {
-  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: 'Source Code Pro', monospace;
   color: #efefef;
   font-size: 13px;
   margin: 0 4px;
@@ -670,8 +602,6 @@ th {
   padding: 5px 10px;
   border-bottom: 1px solid #434343;
   color: #b6b6b6;
-  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
 }
 
 td {
@@ -690,42 +620,24 @@ hr {
 
 dt {
   color: #F0E7D5;
-  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+}
+#body ul {
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+}
+#body ul li {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 2px;
 }
 
-#header {
-  z-index: 100;
-  left: 0;
-  top: 0px;
-  height: 60px;
+#body ul li a {
   width: 100%;
-  position: fixed;
-  background: url(../images/nav-bg.gif) #353535;
-  border-bottom: 4px solid #434343;
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-}
-#header nav {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 0 10px;
-  background: blue;
-  margin: 6px auto;
-}
-#header nav li {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  list-style: none;
-  display: inline;
-  color: white;
-  line-height: 50px;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
-}
-#header nav li a {
+  height: 100%;
   color: white;
   border: 1px solid #5d910b;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
@@ -745,14 +657,15 @@ dt {
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   background-color: #93bd20;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
+  line-height: 50px;
+  font-size: 64px;
   display: inline-block;
+  vertical-align: center;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
+
 }
-#header nav li a:hover {
+#body ul li a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
@@ -765,87 +678,4 @@ dt {
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-}
-#header nav li.fork {
-  float: left;
-  margin-left: 0px;
-}
-#header nav li.downloads {
-  float: right;
-  margin-left: 6px;
-}
-#header nav li.title {
-  float: right;
-  margin-right: 10px;
-  font-size: 11px;
-}
-
-section {
-  max-width: 650px;
-  padding: 30px 0px 50px 0px;
-  margin: 20px 0;
-  margin-top: 70px;
-}
-section #title {
-  border: 0;
-  outline: none;
-  margin: 0 0 50px 0;
-  padding: 0 0 5px 0;
-}
-section #title h1 {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 40px;
-  text-align: center;
-  line-height: 36px;
-}
-section #title p {
-  color: #d7cfbe;
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  text-align: center;
-}
-section #title .credits {
-  font-size: 11px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #696969;
-  margin-top: -10px;
-}
-section #title .credits.left {
-  float: left;
-}
-section #title .credits.right {
-  float: right;
-}
-
-@media print, screen and (max-width: 720px) {
-  #title .credits {
-    display: block;
-    width: 100%;
-    line-height: 30px;
-    text-align: center;
-  }
-  #title .credits .left {
-    float: none;
-    display: block;
-  }
-  #title .credits .right {
-    float: none;
-    display: block;
-  }
-}
-@media print, screen and (max-width: 480px) {
-  #header {
-    margin-top: -20px;
-  }
-
-  section {
-    margin-top: 40px;
-  }
-
-  nav {
-    display: none;
-  }
 }

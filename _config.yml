@@ -1,6 +1,5 @@
 safe: true
-source: _pages
-destination: _site
+auto: true
 lsi: false
 pygments: true
 markdown: rdiscount
@@ -8,8 +7,13 @@ permalink: /:title.html
 exclude:
   - Rakefile
   - Gemfile
+  - Gemfile.lock
   - .rvmrc
-author: mose
-twitter: mo5e
-site:
-  title: Mose page
+  - README.md
+author:
+  name: mose
+  email: mose@mose.com
+  github: mose
+  twitter: mo5e
+title: Mose
+baseline: what about it ?
