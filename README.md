@@ -1,4 +1,4 @@
-mose.giithub.com
+mose github page
 ================
 
-Personal page
+Better seen using a braowser.

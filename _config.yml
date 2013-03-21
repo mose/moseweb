@@ -1,0 +1,15 @@
+safe: true
+source: _pages
+destination: _site
+lsi: false
+pygments: true
+markdown: rdiscount
+permalink: /:title.html
+exclude:
+  - Rakefile
+  - Gemfile
+  - .rvmrc
+author: mose
+twitter: mo5e
+site:
+  title: Mose page
