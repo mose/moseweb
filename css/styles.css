@@ -44,8 +44,8 @@ body {
   padding: 0;
   border-width: 30px 50px;
   box-sizing: border-box;
-  -webkit-border-image: url(../img/border.png) 200 0 0 100 repeat;
-  -moz-border-image: url(../img/border.png) 5% 5% 5% 5% repeat;
+  -webkit-border-image: url(../img/border.png) 300 300  repeat stretch;
+  -moz-border-image: url(../img/border.png) 300 300  repeat stretch;
   border-image: url(../img/border.png) 300 300  repeat stretch;
 }
 #body ul li {
