@@ -5,7 +5,7 @@ title: Home
 
 * [{{ site.title }}](index.html)
 * [on github](https://github.com/mose)
+* [on tumblr](http://blog.mose.com)
 * [on twitter](http://twitter.com/mo5e)
 * [on linkedin](http://linkedin.com/in/ozmose)
-* [on tumblr](http://blog.mose.com)
 * [on coderbits](http://coderbits.com/mose)
