@@ -8,3 +8,4 @@ title: Home
 * [on twitter](http://twitter.com/mo5e)
 * [on linkedin](http://linkedin.com/in/ozmose)
 * [on tumblr](http://blog.mose.com)
+* [on coderbits](http://coderbits.com/mose)

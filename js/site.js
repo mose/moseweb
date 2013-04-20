@@ -8,14 +8,12 @@ window.addEventListener('DOMContentLoaded', function() {
     w = window.innerWidth;
     h = window.innerHeight;
     big = (w < h) ? h : w;
-    n = Math.round(big / items.length);
+    n = Math.round((big-100) / items.length);
     if (n < 150) {
       n = 150;
       h = Math.round(h/2);
     }
-    console.log(n);
     for (i=0;i<items.length;i++) {
-
       items[i].style.width = (n-11)+'px';
       items[i].style.height = (h-12)+'px';
       items[i].childNodes[0].style.width = (n-11)+'px';
@@ -26,6 +24,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  display();
-  window.onresize = function(){ display() };
+  // display();
+  // window.onresize = function(){ display() };
 });
