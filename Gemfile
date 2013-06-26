@@ -7,7 +7,6 @@ gem 'maruku',     '>= 0.6.1'
 gem 'rdiscount',  '>= 2.0.7'
 gem 'RedCloth',   '>= 4.2.9'
 
-gem 'zurb-foundation'
 gem 'compass'
 gem 'compass-h5bp'
-gem 'jekyll-assets'
+gem 'foreman'

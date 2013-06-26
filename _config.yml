@@ -10,6 +10,7 @@ exclude:
   - Gemfile.lock
   - .rvmrc
   - README.md
+  - Procfile
 author:
   name: mose
   email: mose@mose.com
@@ -17,17 +18,3 @@ author:
   twitter: mo5e
 title: Mose
 baseline: what about it ?
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  compress:
-    js: uglifier
-    css: sass
-  cachebust: hard
-  cache_assets: false
-  gzip: [ text/css, application/javascript ]
-

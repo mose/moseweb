@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Mose: a grid</title>
-    {{ stylesheet main }}
-    {{ javascript 'custom.modernizr' }}
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/custom.modernizr.js"></script>
     <script src="js/site.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,9 +19,10 @@
   <body>
 
     <div id="body">
-      {{ content }}
+      <div class="container">
+        {{ content }}
+      </div>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    {{ javascript main }}
   </body>
 </html>

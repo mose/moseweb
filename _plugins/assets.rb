@@ -1,2 +1,5 @@
-require "jekyll-assets"
-require "jekyll-assets/compass"
+module Jekyll
+  class Resume < Page
+
+  end
+end
