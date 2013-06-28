@@ -1,0 +1,21 @@
+safe: false
+auto: false
+lsi: false
+pygments: true
+markdown: kramdown
+markdown_ext:  markdown,mkd,mkdn,md
+permalink: /:title.html
+exclude:
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - .rvmrc
+  - README.md
+  - Procfile
+author:
+  name: mose
+  email: mose@mose.com
+  github: mose
+  twitter: mo5e
+title: Mose
+baseline: what about it ?
