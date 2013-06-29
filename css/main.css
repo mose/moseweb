@@ -12,6 +12,8 @@ body { background-color: #eeeeee; }
 
 #menu { float: left; width: 200px; }
 
+.lang { border-top: 1px solid #cccccc; }
+
 #content { width: 400px; margin-left: 200px; }
 
 #foot { position: relative; height: 60px; border-top: 2px solid #cccccc; }

@@ -1,4 +1,5 @@
 require 'rdiscount'
+require 'awesome_print'
 
 module Jekyll
   class SlimTag < Liquid::Tag
@@ -6,8 +7,10 @@ module Jekyll
       super
       @text = text.strip
     end
-    def render(context)
-      Slim::Template.new(File.join(Dir.pwd, '_includes', @text)).render(context)
+    def render(content)
+      #context.environments[0].ai(html: true)
+      
+      Slim::Template.new(File.join(Dir.pwd, '_includes', @text)).render(content)
     end
   end
 end
