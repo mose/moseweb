@@ -1,6 +1,16 @@
 // nothing there yet
 window.addEventListener('DOMContentLoaded', function() {
 
+  Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+  }
+
   var languages = ["en", "fr", "zh"];
   var language = window.navigator.userLanguage || window.navigator.language;
 

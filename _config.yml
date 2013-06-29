@@ -1,8 +1,8 @@
-safe: true
-auto: true
+safe: false
 lsi: false
 pygments: true
 markdown: rdiscount
+markdown_ext:  markdown,mkd,mkdn,md
 permalink: /:title.html
 exclude:
   - Rakefile
