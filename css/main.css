@@ -25,4 +25,4 @@ li a:hover { background-color: black; color: white; }
 
 #content { width: 400px; margin-left: 200px; }
 
-#foot { position: relative; height: 60px; border-top: 2px solid #cccccc; }
+#foot { position: relative; height: 60px; border-top: 2px solid #cccccc; color: #8899aa; font-size: 12px; }

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Home
 lang: en
 ---
@@ -7,6 +7,4 @@ lang: en
 Mose page
 ============
 
-* [Resume](resume.html)
-* [About](about.html)
-* [Links](links.html)
+here we are.
