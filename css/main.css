@@ -12,17 +12,19 @@ li a:hover { background-color: black; color: white; }
 
 #body { margin: 0; padding: 0; }
 
-.container { width: 600px; margin: 0 auto; position: relative; }
+.container { width: 90%; margin: 0 auto; position: relative; }
 
-#head { height: 60px; border-bottom: 2px solid #cccccc; }
+#head { height: 40px; border-bottom: 2px solid #cccccc; position: relative; }
+#head h1 { margin: 0; padding: 3px 10px; border-left: 5px solid #336699; }
+#head h2 { margin: 0; position: absolute; bottom: 0; right: 0; display: inline-block; }
 
 .meat { clear: both; }
 
-#menu { float: left; width: 200px; }
-#menu ul { width: 200px; }
+#menu { float: left; width: 20%; }
+#menu ul { width: 20%; }
 
 .lang { border-top: 1px solid #cccccc; }
 
-#content { width: 400px; margin-left: 200px; }
+#content { width: 70%; margin-left: 200px; }
 
 #foot { position: relative; height: 60px; border-top: 2px solid #cccccc; color: #8899aa; font-size: 12px; }
