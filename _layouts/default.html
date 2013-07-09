@@ -19,22 +19,30 @@
   <body>
 
     <div id="body">
-      <div class="container">
-        <div id="head">
+      <div id="head">
+        <div class="container">
           <h1><a href="/">Mose</a></h1>
           <h2>An alien</h2>
         </div>
+      </div>
+      <div class="container">
         <div class="meat">
           <div id="menu">
-            {% markdown menu.md  %}
+            {% if page.lang == 'fr' %}
+            {% slim menu.fr.slim  %}
+            {% else %}
+            {% slim menu.en.slim  %}
+            {% endif %}
           </div>
-          <div id="content default">
-            {{ content }}
+          <div id="content">
+            <div id="index">
+              {{ content }}
+            </div>
           </div>
         </div>
         <div class="clearfix"></div>
         <div id="foot">
-          <div class="built">Last built on {{ site.time | date_to_string }}</div>
+          <div class="built">Last built on {{ site.time | date_to_string }} using Jekyll</div>
         </div>
       </div>
     </div>

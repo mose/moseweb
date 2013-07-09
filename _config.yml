@@ -11,6 +11,8 @@ exclude:
   - .rvmrc
   - README.md
   - Procfile
+  - config.rb
+  - MIT-LICENSE.txt
 author:
   name: mose
   email: mose@mose.com
