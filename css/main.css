@@ -18,27 +18,27 @@ h1, h2, h3 { font-family: "Oswald", sans-serif; color: #5d6266; margin-bottom: 0
 #body { margin: 0; padding: 0; }
 
 .container { width: 96%; margin: 0 2%; position: relative; }
-@media only screen and (min-width: 600px) { .container { width: 90%; margin: 0 auto; } }
+@media screen and (min-width: 600px) { .container { width: 90%; margin: 0 auto; } }
 
 #head { position: fixed; top: 0; right: 0; left: 0; height: 60px; border-bottom: 2px solid #6a7f95; background-color: #8899aa; z-index: 10; }
 #head h1 { margin: 0; font-size: 3em; float: left; line-height: 1em; color: white; padding: 5px 0; }
 #head h2 { height: 60px; margin: 0; position: absolute; top: 22px; right: 0; display: inline-block; }
 
-#middle { padding: 60px 0; z-index: 5; }
+#middle { padding: 60px 0 120px 0; z-index: 5; }
 
-#foot { position: fixed; bottom: 0; right: 0; left: 0; height: 20px; border-top: 2px solid #6a7f95; color: white; font-size: 0.8em; background-color: #8899aa; z-index: 10; }
+#foot { position: fixed; bottom: 0; right: 0; left: 0; height: 20px; border-top: 2px solid #6a7f95; color: #404c59; font-size: 0.9em; background-color: #8899aa; z-index: 10; }
 
 .meat { clear: both; }
 
 #menu { display: inline-block; width: 100%; min-width: 180px; }
-@media only screen and (min-width: 600px) { #menu { margin-right: 20px; width: 180px; position: absolute; } }
+@media screen and (min-width: 600px) { #menu { margin-right: 20px; width: 200px; position: absolute; border-right: 4px dotted #d2d9df; } }
 #menu ul { width: 100%; }
 #menu ul li { width: 100%; position: relative; }
 #menu ul li a { position: relative; display: block; padding: 3px 10px; left: 0; right: 0; border-left: 5px solid #336699; }
 #menu ul li a:hover { background-color: black; color: white; }
 
 .menubloc { width: 50%; display: inline-block; vertical-align: top; }
-@media only screen and (min-width: 600px) { .menubloc { width: auto; display: block; } }
+@media screen and (min-width: 600px) { .menubloc { width: auto; display: block; } }
 
 .sidebloc { margin: 10px 0; font-size: 0.9em; line-height: 1.3em; }
 
@@ -46,8 +46,8 @@ h1, h2, h3 { font-family: "Oswald", sans-serif; color: #5d6266; margin-bottom: 0
 .lang a { padding: 10px; border-radius: 0 0 20% 20%; background-color: #8899aa; color: white; font-weight: bold; margin-right: 3px; font-family: "Oswald", sans-serif; box-shadow: inset 0 10px 15px -16px black; }
 .lang a.active { background-color: #336699; }
 
-@media only screen and (min-width: 600px) { #content { display: inline-block; margin-left: 200px; } }
-@media only screen and (min-width: 1158px) { #content .block { width: 48%; margin-right: 2%; min-width: 400px; display: inline-block; vertical-align: top; } }
+@media screen and (min-width: 600px) { #content { display: inline-block; margin-left: 220px; } }
+@media screen and (min-width: 1200px) { #content .block { width: 47%; margin-right: 2%; min-width: 400px; display: inline-block; vertical-align: top; } }
 
 .linkcloud { width: 100%; line-height: 1.7em; }
 .linkcloud .subtitle { font-size: 0.8em; line-height: 1em; color: #336699; }
@@ -57,7 +57,7 @@ h1, h2, h3 { font-family: "Oswald", sans-serif; color: #5d6266; margin-bottom: 0
 .personal li { position: relative; }
 .personal li a { width: 180px; position: absolute; }
 .personal li div { margin-left: 190px; display: inline-block; }
-@media only screen and (min-width: 1158px) { .personal li div { display: block; position: static; } }
+@media screen and (min-width: 1200px) { .personal li div { display: block; position: static; } }
 
 .old tt { margin-right: 1em; }
 .old a { margin-right: 1em; }
@@ -69,6 +69,11 @@ h1, h2, h3 { font-family: "Oswald", sans-serif; color: #5d6266; margin-bottom: 0
 
 .cvblock { margin-top: 10px; position: relative; }
 
+.career { border: 0; padding: 0; }
+@media screen and (min-width: 1200px) { .career { border-left: 4px dotted #d2d9df; padding-left: 10px; } }
 .career .cvdate { width: 5em; }
 .career .cvlabel { font-weight: bold; }
 .career .cvtext { margin-left: 5em; }
+
+.built { position: absolute; right: 0; }
+.built a { font-weight: bold; color: white; }

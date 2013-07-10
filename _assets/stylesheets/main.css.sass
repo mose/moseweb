@@ -6,9 +6,9 @@
 $blue: #369
 $grey: #89a
 $black: #141516
-$narrow: "only screen and (min-width: 400px)"
-$normal: "only screen and (min-width: 600px)"
-$wide: "only screen and (min-width: 1158px)"
+$narrow: "screen and (min-width: 400px)"
+$normal: "screen and (min-width: 600px)"
+$wide: "screen and (min-width: 1200px)"
 
 *
   box-sizing: border-box
@@ -81,7 +81,7 @@ h1, h2, h3
     display: inline-block
 
 #middle
-  padding: 60px 0
+  padding: 60px 0 120px 0
   z-index: 5
 
 #foot
@@ -91,8 +91,8 @@ h1, h2, h3
   left: 0
   height: 20px
   border-top: 2px solid darken($grey,10%)
-  color: white
-  font-size: .8em
+  color: darken($grey,30%)
+  font-size: .9em
   background-color: $grey
   z-index: 10
 
@@ -106,8 +106,9 @@ h1, h2, h3
   min-width: 180px
   @media #{$normal}
     margin-right: 20px
-    width: 180px
+    width: 200px
     position: absolute
+    border-right: 4px dotted lighten($grey,25%)
   ul
     width: 100%
     li
@@ -155,11 +156,11 @@ h1, h2, h3
 #content
   @media #{$normal}
     display: inline-block
-    margin-left: 200px
+    margin-left: 220px
 
   .block
     @media #{$wide}
-      width: 48%
+      width: 47%
       margin-right: 2%
       min-width: 400px
       display: inline-block
@@ -217,9 +218,22 @@ h1, h2, h3
   position: relative
 
 .career
+  border: 0
+  padding: 0
+  @media #{$wide}
+    border-left: 4px dotted lighten($grey,25%)
+    padding-left: 10px
+
   .cvdate
     width: 5em
   .cvlabel
     font-weight: bold
   .cvtext
     margin-left: 5em
+
+.built
+  position: absolute
+  right: 0
+  a
+    font-weight: bold
+    color: white
