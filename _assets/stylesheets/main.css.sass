@@ -1,7 +1,14 @@
 @import 'compass'
 
+@import url(http://fonts.googleapis.com/css?family=Oswald)
+@import url(http://fonts.googleapis.com/css?family=Lato)
+
 $blue: #369
 $grey: #89a
+$black: #141516
+$narrow: "only screen and (min-width: 400px)"
+$normal: "only screen and (min-width: 600px)"
+$wide: "only screen and (min-width: 800px)"
 
 *
   box-sizing: border-box
@@ -11,12 +18,14 @@ body
   font-family: sans-serif
   margin: 0
   padding: 0
+  font-family: 'Lato', sans-serif
+  color: $black
 
 a
   text-decoration: none
-  text-transform: uppercase
-  font-size: .9em
   color: $blue
+  &:focus
+    outline: none
 
 ul
   list-style: none
@@ -26,34 +35,67 @@ ul
 li
   margin: 0
 
+h1, h2, h3
+  font-family: 'Oswald', sans-serif
+  color: lighten($black,30%)
+  margin-bottom: 0
+
+::-moz-selection, ::selection
+  background: $grey
+  text-shadow: none
 
 #body
   margin: 0
   padding: 0
 
 .container
-  width: 90%
-  margin: 0 auto
+  width: 100%
+  padding: 0 5px
   position: relative
+  @media #{$normal}
+    width: 90%
+    margin: 0 auto
 
 #head
   position: fixed
   top: 0
-  height: 40px
-  border-bottom: 2px solid #ccc
-  position: relative
-  background-color: #ccc
-  padding: 10px 0
+  right: 0
+  left: 0
+  height: 60px
+  border-bottom: 2px solid darken($grey,10%)
+  background-color: $grey
+  z-index: 10
   h1
     margin: 0
-    padding: 3px 10px
-    border-left: 5px solid $blue
+    font-size: 3em
+    float: left
+    line-height: 1em
+    color: white
+    padding: 5px 0
   h2
+    height: 60px
     margin: 0
     position: absolute
-    bottom: 0
+    top: 22px
     right: 0
     display: inline-block
+
+#middle
+  padding: 60px 0
+  z-index: 5
+
+#foot
+  position: fixed
+  bottom: 0
+  right: 0
+  left: 0
+  height: 20px
+  border-top: 2px solid darken($grey,10%)
+  color: white
+  font-size: .8em
+  background-color: $grey
+  z-index: 10
+
 
 .meat
   clear: both
@@ -61,8 +103,11 @@ li
 #menu
   float: left
   display: inline-block
-  width: 18%
-  min-width: 100px
+  width: 100%
+  min-width: 180px
+  @media #{$normal}
+    margin-right: 10px
+    width: 18%
   ul
     width: 100%
     li
@@ -79,24 +124,43 @@ li
           background-color: black
           color: white
 
+.menubloc
+  width: 40%
+  display: inline-block
+  vertical-align: top
+  @media #{$normal}
+    width: auto
+    display: block
+
+.sidebloc
+  margin: 10px 0
+  font-size: .9em
+  line-height: 1.3em
+
 .lang
-  padding: 15px 0
+  padding: 10px 0
   a
     padding: 10px
-    border-radius: 100%
-    background-color: black
+    border-radius: 0 0 20% 20%
+    background-color: $grey
     color: white
     font-weight: bold
     margin-right: 3px
+    font-family: 'Oswald', sans-serif
+    box-shadow: inset 0 10px 15px -16px black
+    &.active
+      background-color: $blue
+
 
 #content
-  border-bottom: 1px solid #ccc
-  width: 80%
-  margin-left: 20%
+  @media #{$normal}
+    width: 80%
+    margin-left: 20%
+
   .block
     display: inline-block
     width: 50%
-    min-width: 300px
+    min-width: 400px
     vertical-align: top
 
 .linkcloud
@@ -110,9 +174,11 @@ li
     &:hover
       background-color: black
       color: white
+
 .personal
   div
     font-size: .9em
+
 .old
   tt
     margin-right: 1em
@@ -121,10 +187,20 @@ li
   span
     font-size: .9em
 
-#foot
-  position: relative
-  height: 60px
-  border-top: 2px solid #ccc
-  color: $grey
-  font-size: 12px
+.cvdate
+  float: left
+  width: 8em
 
+.cvtext
+  margin-left: 8em
+
+.cvblock
+  margin-top: 10px
+
+.career
+  .cvdate
+    width: 5em
+  .cvlabel
+    font-weight: bold
+  .cvtext
+    margin-left: 5em

@@ -21,27 +21,31 @@
     <div id="body">
       <div id="head">
         <div class="container">
-          <h1><a href="/">Mose</a></h1>
-          <h2>An alien</h2>
+          <h1>Mose</h1>
+          <h2>The official profile</h2>
         </div>
       </div>
-      <div class="container">
-        <div class="meat">
-          <div id="menu">
-            {% if page.lang == 'fr' %}
-            {% slim menu.fr.slim  %}
-            {% else %}
-            {% slim menu.en.slim  %}
-            {% endif %}
-          </div>
-          <div id="content">
-            <div id="index">
-              {{ content }}
+      <div id="middle">
+        <div class="container">
+          <div class="meat">
+            <div id="menu">
+              {% if page.lang == 'fr' %}
+              {% slim menu.fr.slim  %}
+              {% else %}
+              {% slim menu.en.slim  %}
+              {% endif %}
+            </div>
+            <div id="content">
+              <div id="index">
+                {{ content }}
+              </div>
             </div>
           </div>
+          <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
-        <div id="foot">
+      </div>
+      <div id="foot">
+        <div class="container">
           <div class="built">Last built on {{ site.time | date_to_string }} using Jekyll</div>
         </div>
       </div>
