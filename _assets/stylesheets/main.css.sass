@@ -8,7 +8,7 @@ $grey: #89a
 $black: #141516
 $narrow: "only screen and (min-width: 400px)"
 $normal: "only screen and (min-width: 600px)"
-$wide: "only screen and (min-width: 800px)"
+$wide: "only screen and (min-width: 1158px)"
 
 *
   box-sizing: border-box
@@ -49,8 +49,8 @@ h1, h2, h3
   padding: 0
 
 .container
-  width: 100%
-  padding: 0 5px
+  width: 96%
+  margin: 0 2%
   position: relative
   @media #{$normal}
     width: 90%
@@ -101,13 +101,13 @@ h1, h2, h3
   clear: both
 
 #menu
-  float: left
   display: inline-block
   width: 100%
   min-width: 180px
   @media #{$normal}
-    margin-right: 10px
-    width: 18%
+    margin-right: 20px
+    width: 180px
+    position: absolute
   ul
     width: 100%
     li
@@ -125,7 +125,7 @@ h1, h2, h3
           color: white
 
 .menubloc
-  width: 40%
+  width: 50%
   display: inline-block
   vertical-align: top
   @media #{$normal}
@@ -154,30 +154,46 @@ h1, h2, h3
 
 #content
   @media #{$normal}
-    width: 80%
-    margin-left: 20%
+    display: inline-block
+    margin-left: 200px
 
   .block
-    display: inline-block
-    width: 50%
-    min-width: 400px
-    vertical-align: top
+    @media #{$wide}
+      width: 48%
+      margin-right: 2%
+      min-width: 400px
+      display: inline-block
+      vertical-align: top
 
 .linkcloud
   width: 100%
   line-height: 1.7em
+  .subtitle
+    font-size: .8em
+    line-height: 1em
+    color: $blue
   a
     padding: 2px 5px
-    margin: 1px 3px
+    margin: 3px 2px 0 0
     background-color: #ccc
     border-radius: 3px
+    font-size: .9em
     &:hover
       background-color: black
       color: white
 
 .personal
-  div
-    font-size: .9em
+  li
+    position: relative
+    a
+      width: 180px
+      position: absolute
+    div
+      margin-left: 190px
+      display: inline-block
+      @media #{$wide}
+        display: block
+        position: static
 
 .old
   tt
@@ -188,14 +204,17 @@ h1, h2, h3
     font-size: .9em
 
 .cvdate
-  float: left
-  width: 8em
+  display: inline-block
+  position: absolute
+  width: 128px
 
 .cvtext
-  margin-left: 8em
+  margin-left: 130px
+  position: relative
 
 .cvblock
   margin-top: 10px
+  position: relative
 
 .career
   .cvdate
