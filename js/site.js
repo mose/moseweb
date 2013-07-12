@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function() {
     var here = window.location.href;
     here = here.substr(here.lastIndexOf('/')+1);
     if ((here == 'index.html' || here == '') && language != 'en') {
-      window.location.href = "index."+language+".html";
+      window.location.href = "index-"+language+".html";
     }
   }
 
