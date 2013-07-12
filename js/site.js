@@ -18,4 +18,11 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  var openlink = document.getElementById("open");
+  var body = document.getElementById("body");
+  addEvent(openlink, 'click', function(e) {
+    e.preventDefault();
+    removeClass(body,"full");
+  });
+
 });
