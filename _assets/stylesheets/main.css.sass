@@ -9,6 +9,7 @@ $black: #141516
 $narrow: "screen and (min-width: 400px)"
 $normal: "screen and (min-width: 600px)"
 $wide: "screen and (min-width: 1200px)"
+$duration: 1s
 
 *
   box-sizing: border-box
@@ -65,6 +66,15 @@ h1, h2, h3
   border-bottom: 2px solid darken($grey,10%)
   background-color: $grey
   z-index: 10
+  @include transition-property(height)
+  @include transition-duration($duration)
+  #head
+    z-index: -1
+    position: absolute
+    top: -300%
+    height: 300%
+    @include transition-property(top, height)
+    @include transition-duration($duration)
   h1
     margin: 0
     font-size: 3em
@@ -72,6 +82,9 @@ h1, h2, h3
     line-height: 1em
     color: white
     padding: 5px 0
+    text-shadow: 0 0 0 transparent
+    @include transition-property(font-size)
+    @include transition-duration($duration)
   h2
     height: 60px
     margin: 0
@@ -79,10 +92,32 @@ h1, h2, h3
     top: 22px
     right: 0
     display: inline-block
+    text-shadow: 0 0 0 transparent
+    @include transition-property(font-size, color, top, text-shadow)
+    @include transition-duration($duration)
+  #open
+    position: absolute
+    display: none
+    bottom: -220px
+    margin: 0 auto
+    left: 0
+    right: 0
+    padding: 10px 40px
+    background-color: #fff
+    z-index: 20
+    text-align: center
+    font-size: 24px
+    font-weight: bold
+    @include opacity(.5)
+    &:hover
+      background-color: black
+      color: white
 
 #middle
   padding: 60px 0 120px 0
   z-index: 5
+  @include transition-property(padding)
+  @include transition-duration($duration)
 
 #foot
   position: fixed
@@ -95,7 +130,31 @@ h1, h2, h3
   font-size: .9em
   background-color: $grey
   z-index: 10
+  @include transition-property(height)
+  @include transition-duration($duration)
 
+.full
+  #head
+    bottom: 20px
+    height: 90%
+    #head
+      top: 0
+      height: 100%
+    h1
+      bottom: 0
+      display: block
+      font-size: 150px
+      text-shadow: 0 0 5px black
+    h2
+      top: 120px
+      color: white
+      text-shadow: 0 0 5px black
+    #open
+      display: block
+  #middle
+    padding: 70% 0 120px 0
+  #foot
+    height: 10%
 
 .meat
   clear: both
