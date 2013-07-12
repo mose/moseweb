@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (language.indexOf('-') > -1) {
       language = language.substr(0,language.indexOf('-'));
     }
-    if (!languages.contains(language)) {
+    if (languages.indexOf(language) == -1) {
       language = 'en';
     }
     var here = window.location.href;
