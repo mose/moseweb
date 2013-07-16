@@ -69,12 +69,29 @@ h1, h2, h3
   @include transition-property(height)
   @include transition-duration($duration)
   #image
-    z-index: -1
-    position: absolute
-    top: -300%
-    height: 300%
+    position: fixed
+    top: -480%
+    left: -50%
+    width: 200%
+    height: 200%
     @include transition-property(top, height)
     @include transition-duration($duration)
+    img
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      min-width: 50%
+      min-height: 50%
+      width: auto
+      height: auto
+
+
+
+  #close
+    cursor: pointer
 
   h1
     margin: 0

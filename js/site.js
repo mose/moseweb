@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
   var language = window.navigator.userLanguage || window.navigator.language;
   var userlang = window.location.hash;
   var openlink = document.getElementById("open");
+  var closelink = document.getElementById("close");
   var body = document.getElementById("body");
 
   if (userlang === "#d") {
@@ -27,6 +28,9 @@ window.addEventListener('DOMContentLoaded', function() {
     addEvent(openlink, 'click', function(e) {
       e.preventDefault();
       removeClass(body,"full");
+    });
+    addEvent(closelink, 'click', function(e) {
+      addClass(body,"full");
     });
   }
 
