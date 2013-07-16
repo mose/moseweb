@@ -68,13 +68,15 @@ h1, h2, h3
   z-index: 10
   @include transition-property(height)
   @include transition-duration($duration)
-  #head
+  #image
     z-index: -1
     position: absolute
     top: -300%
     height: 300%
     @include transition-property(top, height)
     @include transition-duration($duration)
+    img
+
   h1
     margin: 0
     font-size: 3em
@@ -137,9 +139,23 @@ h1, h2, h3
   #head
     bottom: 20px
     height: 90%
-    #head
-      top: 0
-      height: 100%
+    #image
+      position: fixed
+      top: -50%
+      left: -50%
+      width: 200%
+      height: 200%
+      img
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        min-width: 50%
+        min-height: 50%
+        width: auto
+        height: auto
     h1
       bottom: 0
       display: block
