@@ -32,7 +32,7 @@ h1, h2, h3 { font-family: "Oswald", sans-serif; color: #5d6266; margin-bottom: 0
 #foot { position: fixed; bottom: 0; right: 0; left: 0; height: 20px; border-top: 2px solid #6a7f95; color: #404c59; font-size: 0.9em; background-color: #8899aa; z-index: 10; -webkit-transition-property: height; -moz-transition-property: height; -o-transition-property: height; transition-property: height; -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; }
 
 .full #head { bottom: 20px; height: 90%; }
-.full #head #image { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; }
+.full #head #image { position: fixed; top: -50%; left: -50%; width: 200%; height: 170%; }
 .full #head #image img { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; min-width: 50%; min-height: 50%; width: auto; height: auto; }
 .full #head h1 { bottom: 0; display: block; font-size: 150px; text-shadow: 0 0 5px black; }
 .full #head h2 { top: 120px; color: white; text-shadow: 0 0 5px black; }
