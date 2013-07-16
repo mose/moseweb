@@ -1,8 +1,6 @@
 mose custom jekyll setup
 ================
 
-This is the jekyll source for [http://mose.github.io] and it's separate because it uses custom plugins for
+This is the jekyll source for [http://mose.github.io] and it's separate because it uses custom plugins for slim processing, and some nifty trick for language detection.
 
-* i18n management
-
-It can be used as an example for building custom Jekyll setup fpr github pages or simply any static website.
+The layout can be of some interest to people, feel free to copy things, of course the resume content belongs to me but you can steal the css, js, html.
