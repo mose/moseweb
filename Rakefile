@@ -25,3 +25,8 @@ task :publish => [:generate] do
     system "git push origin master --force"
   end
 end
+
+desc "update mose.fr"
+task :update do
+  system "ssh duo 'cd web/mose.fr/cv && git pull'"
+end
