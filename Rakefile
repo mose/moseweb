@@ -28,5 +28,5 @@ end
 
 desc "update mose.fr"
 task :update do
-  system "ssh duo 'cd web/mose.fr/cv && git pull'"
+  system "rsync -av --stats --delete _site/ duo:web/mose.fr/cv"
 end
