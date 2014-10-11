@@ -29,5 +29,5 @@ end
 desc "update mose.fr"
 task :update do
   system "rsync -av --stats --delete _site/ duo:web/mose.fr/cv"
-  system "rsync -av --stats --delete _site/ moseweb:/srv/mose.com"
+  #system "rsync -av --stats --delete _site/ moseweb:/srv/mose.com"
 end
