@@ -1,6 +1,6 @@
 safe: false
 lsi: false
-pygments: true
+highlighter: pygments
 markdown: rdiscount
 markdown_ext:  markdown,mkd,mkdn,md
 permalink: /:title.html
@@ -9,10 +9,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .rvmrc
+  - .bundle
   - README.md
   - Procfile
   - config.rb
   - MIT-LICENSE.txt
+  - vendor
 author:
   name: mose
   email: mose@mose.com
