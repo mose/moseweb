@@ -11,4 +11,6 @@ Howto
 
     bundle exec foreman start
 
+    # publish to update mose.github.io
+    # upload to update msoe.com
     rake publish upload
