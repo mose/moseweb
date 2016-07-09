@@ -1,3 +1,3 @@
-jekyll:  jekyll -w serve
+jekyll:  jekyll serve
 compass: compass watch
 
