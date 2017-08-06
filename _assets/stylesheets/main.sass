@@ -88,8 +88,6 @@ h1, h2, h3
       width: auto
       height: auto
 
-
-
   #close
     cursor: pointer
 
@@ -330,6 +328,8 @@ h1, h2, h3
   @media #{$wide}
     border-left: 4px dotted lighten($grey,25%)
     padding-left: 10px
+  @media print
+    page-break-before: always
 
   .cvdate
     @media #{$narrow}
@@ -346,3 +346,24 @@ h1, h2, h3
   a
     font-weight: bold
     color: white
+
+@media print
+  #body
+    font-size: 12pt
+    #head
+      display: none
+      #open
+        display: block
+    #middle
+      padding: 0 0 30pt 0
+      .sidebloc
+        font-size: 12pt
+        line-height: 1.3em
+      .lang, .currently, .linkcloud
+        display: none
+      .career
+        .cvdate
+          margin-top: 2pt
+    #foot
+      display: none
+
