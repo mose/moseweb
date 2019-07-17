@@ -29,8 +29,7 @@ end
 
 desc "update mose.fr"
 task :upload do
-  system "rsync -av --stats --delete --exclude keybase.txt _site/ duo:web/mose.fr/cv"
-  #system "rsync -av --stats --delete _site/ moseweb:/srv/mose.com"
+  system "rsync -av --stats --delete --exclude keybase.txt _site/ mose.com:web/mose.fr/cv"
 end
 
 task :default => "generate"
