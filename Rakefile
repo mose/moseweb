@@ -28,7 +28,7 @@ task :publish => [:generate] do
 end
 
 desc "update mose.fr"
-task :upload do
+task :upload => [:generate] do
   system "rsync -av --stats --delete --exclude keybase.txt _site/ mose.com:web/mose.fr/cv"
 end
 
